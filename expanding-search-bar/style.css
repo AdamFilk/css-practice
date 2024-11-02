@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    width: 30%;
+    transition: width ease-in-out 300ms;
+    height: 3em;
+    padding: 1em .5em;
+}
+
+.input-box:focus {
+    width: 100%;
+}
+
+.input-box:focus::placeholder{
+    color: transparent;
+}
+
+
